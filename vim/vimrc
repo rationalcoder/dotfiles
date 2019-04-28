@@ -1,0 +1,62 @@
+execute pathogen#infect()
+
+syntax on
+filetype plugin on
+
+set background=dark
+set noerrorbells visualbell t_vb=
+set backspace=indent,eol,start
+set smartindent
+set t_Co=256
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+set ci
+set wrap
+set linebreak
+
+nmap <tab> <C-w><C-w>
+nnoremap <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+
+set ignorecase
+
+" NOTE: not sure why but leave color at the end or it may not work right.
+"color Tomorrow-Night
+color jellybeans
+"color hybrid 
+"color lilypink 
+set guifont=DejaVu\ Sans\ Mono:h10
+
+
+au GUIEnter * simalt ~x
+au GUIEnter * set visualbell t_vb=
+
+" Magic 256 color setting for PuTTY:
+if &term =~ "xterm"
+    " 256 colors
+    let &t_Co = 256
+    " restore screen after quitting
+    let &t_ti = "\<Esc>7\<Esc>[r\<Esc>[?47h"
+    let &t_te = "\<Esc>[?47l\<Esc>8"
+    if has("terminfo")
+        let &t_Sf = "\<Esc>[3%p1%dm"
+        let &t_Sb = "\<Esc>[4%p1%dm"
+    else
+        let &t_Sf = "\<Esc>[3%dm"
+        let &t_Sb = "\<Esc>[4%dm"
+    endif
+endif
+
+function MoveCursorToWhereItWas()
+    if line("'\"") > 0 && line("'\"") <= line("$")
+        exe "normal! g`\""
+        exe "normal! zz"
+    endif
+endfunction
+
+if has("autocmd")
+    au BufReadPost * call MoveCursorToWhereItWas()
+endif
+
+
