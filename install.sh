@@ -14,6 +14,7 @@ cp vim/vimrc ~/_vimrc
 
 mkdir -p ~/.vim/
 mkdir -p ~/vimfiles/
+mkdir -p ~/AppData/Local/nvim/
 
 cp -r vim/vimfiles/* ~/.vim/
 cp -r vim/vimfiles/* ~/vimfiles/
