@@ -1,0 +1,218 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/20c2fb8c/
+BUILD_INVERTED_INDEX	plat/win32/update_scopedb.cmd	/^    set BUILD_INVERTED_INDEX=1$/;"	v
+BUILD_INVERTED_INDEX	plat/win32/update_scopedb.cmd	/^set BUILD_INVERTED_INDEX=0$/;"	v
+CSCOPE_ARGS	plat/win32/update_scopedb.cmd	/^    set CSCOPE_ARGS=%CSCOPE_ARGS% -q$/;"	v
+CSCOPE_ARGS	plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=$/;"	v
+CSCOPE_ARGS	plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=%CSCOPE_ARGS% -i %DB_FILE%.files$/;"	v
+CSCOPE_EXE	plat/win32/update_scopedb.cmd	/^    set CSCOPE_EXE=%~2$/;"	v
+CSCOPE_EXE	plat/win32/update_scopedb.cmd	/^set CSCOPE_EXE=cscope$/;"	v
+CTAGS_ARGS	plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% "%PROJECT_ROOT%"$/;"	v
+CTAGS_ARGS	plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% --append "%UPDATED_SOURCE%"$/;"	v
+CTAGS_ARGS	plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% -L %TAGS_FILE%.files$/;"	v
+CTAGS_ARGS	plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% %~2$/;"	v
+CTAGS_ARGS	plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --exclude=%2$/;"	v
+CTAGS_ARGS	plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --options=%2$/;"	v
+CTAGS_ARGS	plat/win32/update_tags.cmd	/^set CTAGS_ARGS=$/;"	v
+CTAGS_EXE	plat/win32/update_tags.cmd	/^    set CTAGS_EXE=%~2$/;"	v
+CTAGS_EXE	plat/win32/update_tags.cmd	/^set CTAGS_EXE=ctags$/;"	v
+CleanUp	plat/unix/update_scopedb.sh	/^CleanUp() {$/;"	f
+Contributing	CONTRIBUTING.md	/^# Contributing$/;"	c
+DB_FILE	plat/win32/update_scopedb.cmd	/^    set DB_FILE=%~2$/;"	v
+DB_FILE	plat/win32/update_scopedb.cmd	/^set DB_FILE=cscope.out$/;"	v
+DoneParseArgs	plat/win32/update_scopedb.cmd	/^:DoneParseArgs$/;"	l
+DoneParseArgs	plat/win32/update_tags.cmd	/^:DoneParseArgs$/;"	l
+FILESIZE	plat/win32/update_scopedb.cmd	/^for \/F %%F in ("%DB_FILE%.files") do set FILESIZE=%%~zF$/;"	v
+FILESIZE	plat/win32/update_scopedb.cmd	/^set FILESIZE=0$/;"	v
+FILE_LIST_CMD	plat/win32/update_scopedb.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	plat/win32/update_scopedb.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD	plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	plat/win32/update_tags.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD_IS_ABSOLUTE=1$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	plat/win32/update_tags.cmd	/^set FILE_LIST_CMD_IS_ABSOLUTE=0$/;"	v
+Gutentags	README.md	/^# Gutentags$/;"	c
+GutentagsToggleEnabled	plugin/gutentags.vim	/^    command! GutentagsToggleEnabled :let g:gutentags_enabled=!g:gutentags_enabled$/;"	c
+GutentagsToggleFake	plugin/gutentags.vim	/^    command! GutentagsToggleFake    :call gutentags#fake()$/;"	c
+GutentagsToggleTrace	plugin/gutentags.vim	/^    command! GutentagsToggleTrace   :call gutentags#toggletrace()$/;"	c
+GutentagsUpdate	autoload/gutentags.vim	/^    command! -buffer -bang GutentagsUpdate :call s:manual_update_tags(<bang>0)$/;"	c
+How?	README.md	/^## How?$/;"	s	chapter:Gutentags
+INDEX_WHOLE_PROJECT	plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v
+INDEX_WHOLE_PROJECT	plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v
+LOG_FILE	plat/win32/update_scopedb.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	plat/win32/update_scopedb.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	plat/win32/update_scopedb.cmd	/^set LOG_FILE=$/;"	v
+LOG_FILE	plat/win32/update_tags.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	plat/win32/update_tags.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	plat/win32/update_tags.cmd	/^set LOG_FILE=$/;"	v
+LoopParseArgs	plat/win32/update_scopedb.cmd	/^:LoopParseArgs$/;"	l
+LoopParseArgs	plat/win32/update_tags.cmd	/^:LoopParseArgs$/;"	l
+PAUSE_BEFORE_EXIT	plat/win32/update_tags.cmd	/^    set PAUSE_BEFORE_EXIT=1$/;"	v
+PAUSE_BEFORE_EXIT	plat/win32/update_tags.cmd	/^set PAUSE_BEFORE_EXIT=0$/;"	v
+POST_PROCESS_CMD	plat/win32/update_tags.cmd	/^    set POST_PROCESS_CMD=%~2$/;"	v
+POST_PROCESS_CMD	plat/win32/update_tags.cmd	/^set POST_PROCESS_CMD=$/;"	v
+PROJECT_ROOT	plat/win32/update_tags.cmd	/^    set PROJECT_ROOT=%~2$/;"	v
+PROJECT_ROOT	plat/win32/update_tags.cmd	/^set PROJECT_ROOT=$/;"	v
+PROJ_ROOT	plat/win32/update_scopedb.cmd	/^    set PROJ_ROOT=%~2$/;"	v
+ParseArgs	plat/win32/update_scopedb.cmd	/^:ParseArgs$/;"	l
+ParseArgs	plat/win32/update_tags.cmd	/^:ParseArgs$/;"	l
+Pushing	CONTRIBUTING.md	/^## Pushing$/;"	s	chapter:Contributing
+Related Projects	README.md	/^# Related Projects$/;"	c
+ShowUsage	plat/unix/update_scopedb.sh	/^ShowUsage() {$/;"	f
+ShowUsage	plat/unix/update_tags.sh	/^ShowUsage() {$/;"	f
+TAGS_FILE	plat/win32/update_tags.cmd	/^    set TAGS_FILE=%~2$/;"	v
+TAGS_FILE	plat/win32/update_tags.cmd	/^set TAGS_FILE=tags$/;"	v
+Testing	CONTRIBUTING.md	/^## Testing$/;"	s	chapter:Contributing
+UPDATED_SOURCE	plat/win32/update_tags.cmd	/^    set UPDATED_SOURCE=%~2$/;"	v
+UPDATED_SOURCE	plat/win32/update_tags.cmd	/^set UPDATED_SOURCE=$/;"	v
+Unlock	plat/win32/update_tags.cmd	/^:Unlock$/;"	l
+Usage	plat/win32/update_scopedb.cmd	/^:Usage$/;"	l
+Usage	plat/win32/update_tags.cmd	/^:Usage$/;"	l
+What?	README.md	/^## What?$/;"	s	chapter:Gutentags
+Why?	README.md	/^## Why?$/;"	s	chapter:Gutentags
+Writing	CONTRIBUTING.md	/^## Writing$/;"	s	chapter:Contributing
+g:	autoload/gutentags/ctags.vim	/^            let g:[newname] = g:[key]$/;"	v
+g:__gutentags_vim_is_leaving	autoload/gutentags.vim	/^    let g:__gutentags_vim_is_leaving = 1$/;"	v
+g:__gutentags_vim_is_leaving	plugin/gutentags.vim	/^let g:__gutentags_vim_is_leaving = 0$/;"	v
+g:gutentags_add_ctrlp_root_markers	plugin/gutentags.vim	/^let g:gutentags_add_ctrlp_root_markers = get(g:, 'gutentags_add_ctrlp_root_markers', 1)$/;"	v
+g:gutentags_add_default_project_roots	plugin/gutentags.vim	/^let g:gutentags_add_default_project_roots = get(g:, 'gutentags_add_default_project_roots', 1)$/;"	v
+g:gutentags_auto_add_cscope	autoload/gutentags/cscope.vim	/^    let g:gutentags_auto_add_cscope = 1$/;"	v
+g:gutentags_auto_add_gtags_cscope	autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_auto_add_gtags_cscope = 1$/;"	v
+g:gutentags_background_update	plugin/gutentags.vim	/^let g:gutentags_background_update = get(g:, 'gutentags_background_update', 1)$/;"	v
+g:gutentags_cache_dir	plugin/gutentags.vim	/^    let g:gutentags_cache_dir = ''$/;"	v
+g:gutentags_cache_dir	plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':p')$/;"	v
+g:gutentags_cache_dir	plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':s?[\/\\\\]$??')$/;"	v
+g:gutentags_cscope_build_inverted_index	autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_build_inverted_index = 0$/;"	v
+g:gutentags_cscope_executable	autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_executable = 'cscope'$/;"	v
+g:gutentags_ctags_auto_set_tags	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_auto_set_tags = get(g:, 'gutentags_ctags_auto_set_tags', 1)$/;"	v
+g:gutentags_ctags_check_tagfile	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_check_tagfile = get(g:, 'gutentags_ctags_check_tagfile', 0)$/;"	v
+g:gutentags_ctags_exclude	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude = get(g:, 'gutentags_ctags_exclude', [])$/;"	v
+g:gutentags_ctags_exclude_wildignore	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude_wildignore = get(g:, 'gutentags_ctags_exclude_wildignore', 1)$/;"	v
+g:gutentags_ctags_executable	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_executable = get(g:, 'gutentags_ctags_executable', 'ctags')$/;"	v
+g:gutentags_ctags_extra_args	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_extra_args = get(g:, 'gutentags_ctags_extra_args', [])$/;"	v
+g:gutentags_ctags_options_file	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_options_file = get(g:, 'gutentags_ctags_options_file', '.gutctags')$/;"	v
+g:gutentags_ctags_post_process_cmd	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_post_process_cmd = get(g:, 'gutentags_ctags_post_process_cmd', '')$/;"	v
+g:gutentags_ctags_tagfile	autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_tagfile = get(g:, 'gutentags_ctags_tagfile', 'tags')$/;"	v
+g:gutentags_debug	plugin/gutentags.vim	/^let g:gutentags_debug = get(g:, 'gutentags_debug', 0)$/;"	v
+g:gutentags_define_advanced_commands	plugin/gutentags.vim	/^let g:gutentags_define_advanced_commands = get(g:, 'gutentags_define_advanced_commands', 0)$/;"	v
+g:gutentags_enabled	autoload/gutentags/ctags.vim	/^            let g:gutentags_enabled = 0$/;"	v
+g:gutentags_enabled	plugin/gutentags.vim	/^let g:gutentags_enabled = get(g:, 'gutentags_enabled', 1)$/;"	v
+g:gutentags_exclude_filetypes	plugin/gutentags.vim	/^let g:gutentags_exclude_filetypes = get(g:, 'gutentags_exclude_filetypes', [])$/;"	v
+g:gutentags_exclude_project_root	plugin/gutentags.vim	/^let g:gutentags_exclude_project_root = get(g:, 'gutentags_exclude_project_root', ['\/usr\/local'/;"	v
+g:gutentags_fake	autoload/gutentags.vim	/^        let g:gutentags_fake = a:1$/;"	v
+g:gutentags_fake	autoload/gutentags.vim	/^    let g:gutentags_fake = !g:gutentags_fake$/;"	v
+g:gutentags_fake	plugin/gutentags.vim	/^let g:gutentags_fake = get(g:, 'gutentags_fake', 0)$/;"	v
+g:gutentags_file_list_command	plugin/gutentags.vim	/^let g:gutentags_file_list_command = get(g:, 'gutentags_file_list_command', '')$/;"	v
+g:gutentags_generate_on_empty_buffer	plugin/gutentags.vim	/^let g:gutentags_generate_on_empty_buffer = get(g:, 'gutentags_generate_on_empty_buffer', 0)$/;"	v
+g:gutentags_generate_on_missing	plugin/gutentags.vim	/^let g:gutentags_generate_on_missing = get(g:, 'gutentags_generate_on_missing', 1)$/;"	v
+g:gutentags_generate_on_new	plugin/gutentags.vim	/^let g:gutentags_generate_on_new = get(g:, 'gutentags_generate_on_new', 1)$/;"	v
+g:gutentags_generate_on_write	plugin/gutentags.vim	/^let g:gutentags_generate_on_write = get(g:, 'gutentags_generate_on_write', 1)$/;"	v
+g:gutentags_gtags_cscope_executable	autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_cscope_executable = 'gtags-cscope'$/;"	v
+g:gutentags_gtags_dbpath	autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_dbpath = ''$/;"	v
+g:gutentags_gtags_executable	autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_executable = 'gtags'$/;"	v
+g:gutentags_gtags_options_file	autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_options_file = '.gutgtags'$/;"	v
+g:gutentags_init_user_func	plugin/gutentags.vim	/^let g:gutentags_init_user_func = get(g:, 'gutentags_init_user_func', $/;"	v
+g:gutentags_modules	plugin/gutentags.vim	/^let g:gutentags_modules = get(g:, 'gutentags_modules', ['ctags'])$/;"	v
+g:gutentags_pause_after_update	plugin/gutentags.vim	/^let g:gutentags_pause_after_update = get(g:, 'gutentags_pause_after_update', 0)$/;"	v
+g:gutentags_plat_dir	plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . "\\\\plat\\\\win32\\\\"$/;"	v
+g:gutentags_plat_dir	plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . '\/plat\/unix\/'$/;"	v
+g:gutentags_project_info	plugin/gutentags.vim	/^let g:gutentags_project_info = get(g:, 'gutentags_project_info', [])$/;"	v
+g:gutentags_project_root	plugin/gutentags.vim	/^    let g:gutentags_project_root += ['.git', '.hg', '.svn', '.bzr', '_darcs', '_FOSSIL_', '.fslc/;"	v
+g:gutentags_project_root	plugin/gutentags.vim	/^let g:gutentags_project_root = get(g:, 'gutentags_project_root', [])$/;"	v
+g:gutentags_project_root_finder	plugin/gutentags.vim	/^let g:gutentags_project_root_finder = get(g:, 'gutentags_project_root_finder', '')$/;"	v
+g:gutentags_res_dir	plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . "\\\\res\\\\"$/;"	v
+g:gutentags_res_dir	plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . '\/res\/'$/;"	v
+g:gutentags_resolve_symlinks	plugin/gutentags.vim	/^let g:gutentags_resolve_symlinks = get(g:, 'gutentags_resolve_symlinks', 0)$/;"	v
+g:gutentags_scopefile	autoload/gutentags/cscope.vim	/^    let g:gutentags_scopefile = 'cscope.out'$/;"	v
+g:gutentags_script_ext	plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.cmd'$/;"	v
+g:gutentags_script_ext	plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.sh'$/;"	v
+g:gutentags_trace	autoload/gutentags.vim	/^            let g:gutentags_trace = l:prev_trace$/;"	v
+g:gutentags_trace	autoload/gutentags.vim	/^        let g:gutentags_trace = 1$/;"	v
+g:gutentags_trace	autoload/gutentags.vim	/^        let g:gutentags_trace = a:1$/;"	v
+g:gutentags_trace	autoload/gutentags.vim	/^        let g:gutentags_trace = l:trace_backup$/;"	v
+g:gutentags_trace	autoload/gutentags.vim	/^    let g:gutentags_trace = !g:gutentags_trace$/;"	v
+g:gutentags_trace	plugin/gutentags.vim	/^let g:gutentags_trace = get(g:, 'gutentags_trace', 0)$/;"	v
+g:gutentags_use_jobs	plugin/gutentags.vim	/^let g:gutentags_use_jobs = get(g:, 'gutentags_use_jobs', has('job'))$/;"	v
+g:loaded_gutentags	plugin/gutentags.vim	/^let g:loaded_gutentags = 1$/;"	v
+gutentags#add_job	autoload/gutentags.vim	/^function! gutentags#add_job(module, tags_file, data) abort$/;"	f
+gutentags#build_default_job_options	autoload/gutentags.vim	/^    function! gutentags#build_default_job_options(module) abort$/;"	f
+gutentags#chdir	autoload/gutentags.vim	/^function! gutentags#chdir(path)$/;"	f
+gutentags#cscope#generate	autoload/gutentags/cscope.vim	/^function! gutentags#cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#cscope#init	autoload/gutentags/cscope.vim	/^function! gutentags#cscope#init(project_root) abort$/;"	f
+gutentags#cscope#on_job_exit	autoload/gutentags/cscope.vim	/^function! gutentags#cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#ctags#generate	autoload/gutentags/ctags.vim	/^function! gutentags#ctags#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#ctags#init	autoload/gutentags/ctags.vim	/^function! gutentags#ctags#init(project_root) abort$/;"	f
+gutentags#ctags#on_job_exit	autoload/gutentags/ctags.vim	/^function! gutentags#ctags#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#default_get_project_root	autoload/gutentags.vim	/^function! gutentags#default_get_project_root(path) abort$/;"	f
+gutentags#default_stderr_cb	autoload/gutentags.vim	/^function! gutentags#default_stderr_cb(chan, msg) abort$/;"	f
+gutentags#default_stdout_cb	autoload/gutentags.vim	/^function! gutentags#default_stdout_cb(chan, msg) abort$/;"	f
+gutentags#error	autoload/gutentags.vim	/^function! gutentags#error(message)$/;"	f
+gutentags#fake	autoload/gutentags.vim	/^function! gutentags#fake(...)$/;"	f
+gutentags#find_job_index_by_data	autoload/gutentags.vim	/^function! gutentags#find_job_index_by_data(module, data) abort$/;"	f
+gutentags#find_job_index_by_tags_file	autoload/gutentags.vim	/^function! gutentags#find_job_index_by_tags_file(module, tags_file) abort$/;"	f
+gutentags#get_cachefile	autoload/gutentags.vim	/^function! gutentags#get_cachefile(root_dir, filename) abort$/;"	f
+gutentags#get_job_data	autoload/gutentags.vim	/^function! gutentags#get_job_data(module, job_idx) abort$/;"	f
+gutentags#get_job_tags_file	autoload/gutentags.vim	/^function! gutentags#get_job_tags_file(module, job_idx) abort$/;"	f
+gutentags#get_plat_file	autoload/gutentags.vim	/^function! gutentags#get_plat_file(filename) abort$/;"	f
+gutentags#get_project_file_list_cmd	autoload/gutentags.vim	/^function! gutentags#get_project_file_list_cmd(path) abort$/;"	f
+gutentags#get_project_info	autoload/gutentags.vim	/^function! gutentags#get_project_info(path) abort$/;"	f
+gutentags#get_project_root	autoload/gutentags.vim	/^function! gutentags#get_project_root(path) abort$/;"	f
+gutentags#get_res_file	autoload/gutentags.vim	/^function! gutentags#get_res_file(filename) abort$/;"	f
+gutentags#gtags_cscope#generate	autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#gtags_cscope#init	autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#init(project_root) abort$/;"	f
+gutentags#gtags_cscope#on_job_exit	autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#inprogress	autoload/gutentags.vim	/^function! gutentags#inprogress()$/;"	f
+gutentags#is_path_rooted	autoload/gutentags.vim	/^    function! gutentags#is_path_rooted(path) abort$/;"	f
+gutentags#make_args	autoload/gutentags.vim	/^    function! gutentags#make_args(cmd) abort$/;"	f
+gutentags#normalizepath	autoload/gutentags.vim	/^function! gutentags#normalizepath(path)$/;"	f
+gutentags#on_vim_leave_pre	autoload/gutentags.vim	/^function! gutentags#on_vim_leave_pre() abort$/;"	f
+gutentags#remove_job	autoload/gutentags.vim	/^function! gutentags#remove_job(module, job_idx) abort$/;"	f
+gutentags#remove_job_by_data	autoload/gutentags.vim	/^function! gutentags#remove_job_by_data(module, data) abort$/;"	f
+gutentags#rescan	autoload/gutentags.vim	/^function! gutentags#rescan(...)$/;"	f
+gutentags#setup_gutentags	autoload/gutentags.vim	/^function! gutentags#setup_gutentags() abort$/;"	f
+gutentags#shellslash	autoload/gutentags.vim	/^function! gutentags#shellslash(path)$/;"	f
+gutentags#start_job	autoload/gutentags.vim	/^    function! gutentags#start_job(cmd, opts) abort$/;"	f
+gutentags#statusline	autoload/gutentags.vim	/^function! gutentags#statusline(...) abort$/;"	f
+gutentags#statusline_cb	autoload/gutentags.vim	/^function! gutentags#statusline_cb(fmt_cb, ...) abort$/;"	f
+gutentags#stripslash	autoload/gutentags.vim	/^function! gutentags#stripslash(path)$/;"	f
+gutentags#throw	autoload/gutentags.vim	/^function! gutentags#throw(message)$/;"	f
+gutentags#toggletrace	autoload/gutentags.vim	/^function! gutentags#toggletrace(...)$/;"	f
+gutentags#trace	autoload/gutentags.vim	/^function! gutentags#trace(message, ...)$/;"	f
+gutentags#validate_cmd	autoload/gutentags.vim	/^function! gutentags#validate_cmd(cmd) abort$/;"	f
+gutentags#warning	autoload/gutentags.vim	/^function! gutentags#warning(message)$/;"	f
+gutentags_detect	plugin/gutentags.vim	/^augroup gutentags_detect$/;"	a
+s:_handleOldOptions	autoload/gutentags/ctags.vim	/^function! s:_handleOldOptions() abort$/;"	f
+s:add_db	autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
+s:added_db_files	autoload/gutentags/gtags_cscope.vim	/^let s:added_db_files = {}$/;"	v
+s:added_dbs	autoload/gutentags/cscope.vim	/^let s:added_dbs = []$/;"	v
+s:cache_project_root	autoload/gutentags.vim	/^function! s:cache_project_root(path) abort$/;"	f
+s:did_check_exe	autoload/gutentags/ctags.vim	/^let s:did_check_exe = 0$/;"	v
+s:generate_wildignore_options	autoload/gutentags/ctags.vim	/^function! s:generate_wildignore_options() abort$/;"	f
+s:get_ctags_executable	autoload/gutentags/ctags.vim	/^function! s:get_ctags_executable(proj_dir) abort$/;"	f
+s:known_files	autoload/gutentags.vim	/^let s:known_files = []$/;"	v
+s:known_projects	autoload/gutentags.vim	/^let s:known_projects = {}$/;"	v
+s:last_wildignores	autoload/gutentags/ctags.vim	/^let s:last_wildignores = ''$/;"	v
+s:manual_update_tags	autoload/gutentags.vim	/^function! s:manual_update_tags(bang) abort$/;"	f
+s:nvim_job_exit_wrapper	autoload/gutentags.vim	/^    function! s:nvim_job_exit_wrapper(real_cb, job, exit_code, event_type) abort$/;"	f
+s:nvim_job_out_wrapper	autoload/gutentags.vim	/^    function! s:nvim_job_out_wrapper(real_cb, job, lines, event_type) abort$/;"	f
+s:process_options_file	autoload/gutentags/ctags.vim	/^function! s:process_options_file(proj_dir, path) abort$/;"	f
+s:runner_exe	autoload/gutentags/cscope.vim	/^let s:runner_exe = gutentags#get_plat_file('update_scopedb')$/;"	v
+s:runner_exe	autoload/gutentags/ctags.vim	/^let s:runner_exe = '"' . gutentags#get_plat_file('update_tags') . '"'$/;"	v
+s:unix_redir	autoload/gutentags/cscope.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:unix_redir	autoload/gutentags/ctags.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:update_in_progress	autoload/gutentags.vim	/^    let s:update_in_progress[module] = []$/;"	v
+s:update_in_progress	autoload/gutentags.vim	/^let s:update_in_progress = {}$/;"	v
+s:update_queue	autoload/gutentags.vim	/^    let s:update_queue[module] = []$/;"	v
+s:update_queue	autoload/gutentags.vim	/^let s:update_queue = {}$/;"	v
+s:update_tags	autoload/gutentags.vim	/^function! s:update_tags(bufno, module, write_mode, queue_mode) abort$/;"	f
+s:wildignores_options_path	autoload/gutentags/ctags.vim	/^let s:wildignores_options_path = ''$/;"	v
+s:write_triggered_update_tags	autoload/gutentags.vim	/^function! s:write_triggered_update_tags(bufno) abort$/;"	f
+use_raw_list	plat/win32/update_tags.cmd	/^        if ["%FILE_LIST_CMD_IS_ABSOLUTE%"]==["1"] set use_raw_list=1$/;"	v
+use_raw_list	plat/win32/update_tags.cmd	/^        if ["%PROJECT_ROOT%"]==["."] set use_raw_list=1$/;"	v
+use_raw_list	plat/win32/update_tags.cmd	/^        set use_raw_list=0$/;"	v

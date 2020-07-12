@@ -11,23 +11,27 @@ set t_Co=256
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set number
+"set number
 set ci
 set wrap
 set linebreak
+set nocp
 
-nmap <tab> <C-w><C-w>
+nnoremap <leader>ev :vsplit ~/.vimrc<cr>
+nnoremap <leader>env :vsplit $MYVIMRC<cr>
 nnoremap <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 set ignorecase
 
+set termguicolors
 " NOTE: not sure why but leave color at the end or it may not work right.
 "color Tomorrow-Night
-color jellybeans
+color handmade-hero
 "color hybrid 
 "color lilypink 
-set guifont=DejaVu\ Sans\ Mono:h10
-
+if !has('nvim')
+    set guifont=DejaVu\ Sans\ Mono:h11
+endif
 
 au GUIEnter * simalt ~x
 au GUIEnter * set visualbell t_vb=
@@ -59,4 +63,39 @@ if has("autocmd")
     au BufReadPost * call MoveCursorToWhereItWas()
 endif
 
+autocmd FileType html setlocal sw=2 ts=2
+autocmd FileType css setlocal sw=2 ts=2
+autocmd FileType Makefile setlocal noet
+
+" AsyncRun
+let g:asyncrun_open = 15
+let g:asyncrun_auto = "make"
+" F10 to toggle quickfix window
+nnoremap <F10> :call asyncrun#quickfix_toggle(g:asyncrun_open)<cr>
+nnoremap <F5> :w<cr>:AsyncRun! build<cr>
+nnoremap <F7> :w<cr>:cclose<cr>:AsyncStop!<cr>:sleep<cr>:AsyncRun! -slient run<cr>:cclose<cr>
+nnoremap <c-j> :cnext<cr>
+nnoremap <c-k> :cprev<cr>
+"
+
+"GutenTags
+let g:gutentags_ctags_exclude = ["build*/*"] 
+nnoremap <F2> <c-]>
+"
+
+" errormarker
+let g:errormarker_errortext = "E"
+let g:errormarker_warningtext = "W"
+let g:errormarker_errortextgroup = "ErrorMsg"
+let g:errormarker_warningtextgroup = "cImportant"
+let g:errormarker_errorgroup = "non_existent_group"
+let g:errormarker_warninggroup = "non_existent_group"
+" These are for gcc, but they cause "error" to be highlighted in the qfx
+" window, which is annoying.
+"let &errorformat="%f:%l:%c: %t%*[^:]:%m," . &errorformat
+"let &errorformat="%f:%l: %t%*[^:]:%m," . &errorformat
+
+let &errorformat="%f(%l): %t%*[^:]: %m," . &errorformat
+let errormarker_warningtypes = "wWiI"
+"
 

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='C:/Users/rationalcoder .'
+let g:netrw_dirhist_7='C:/Users/rationalcoder/.vim/bundle/vim-handmade-hero'
+let g:netrw_dirhist_6='C:/Users/rationalcoder/.vim/bundle'
+let g:netrw_dirhist_5='C:/Users/rationalcoder/.vim'
+let g:netrw_dirhist_4='/c/projects/repos/blog/themes/hugo-theme-nix/layouts'
+let g:netrw_dirhist_3='/c/projects/repos/blog/themes/hugo-theme-nix'
+let g:netrw_dirhist_2='/c/projects/repos/blog/themes/hugo-theme-nix/layouts'
+let g:netrw_dirhist_1='/c/projects/repos/blog/themes/hugo-theme-nix/layouts/partials'
+let g:netrw_dirhist_0='/c/projects/repos/blog/themes/hugo-theme-nix/layouts'
+let g:netrw_dirhist_9='/c/projects/repos/blog/themes/hugo-theme-nix'

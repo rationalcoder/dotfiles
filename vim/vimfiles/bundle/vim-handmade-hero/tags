@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/20c2fb8c/
+Installation	README.md	/^## Installation$/;"	s	chapter:[Handmade Hero](https://handmadehero.org/)
+LICENSE	README.md	/^# LICENSE$/;"	c
+Options	README.md	/^## Options$/;"	s	chapter:[Handmade Hero](https://handmadehero.org/)
+Screenshots	README.md	/^## Screenshots$/;"	s	chapter:[Handmade Hero](https://handmadehero.org/)
+[Handmade Hero](https://handmadehero.org/)	README.md	/^# [Handmade Hero](https:\/\/handmadehero.org\/)$/;"	c
+colors_name	colors/handmade-hero.vim	/^let colors_name = "handmade-hero"$/;"	v
+s:HL	colors/handmade-hero.vim	/^function! s:HL(group, fg, ...)$/;"	f
+s:at_highlight	colors/handmade-hero.vim	/^let s:at_highlight = ["#CDAA7D", 0]$/;"	v
+s:back	colors/handmade-hero.vim	/^let s:back = ['#161616', 0]$/;"	v
+s:bar	colors/handmade-hero.vim	/^let s:bar = ["#CACACA", 0]$/;"	v
+s:bar_active	colors/handmade-hero.vim	/^let s:bar_active = ["#A8A8A8", 0]$/;"	v
+s:base	colors/handmade-hero.vim	/^let s:base = ["#000000", 0]$/;"	v
+s:bug	colors/handmade-hero.vim	/^let s:bug = ["#DD0000", 0]$/;"	v
+s:comment	colors/handmade-hero.vim	/^let s:comment = ["#7D7D7D", 0]$/;"	v
+s:constant	colors/handmade-hero.vim	/^let s:constant = ["#6B8E23", 0]$/;"	v
+s:cursor	colors/handmade-hero.vim	/^let s:cursor = ["#40FF40", 0]$/;"	v
+s:default	colors/handmade-hero.vim	/^let s:default = ['#A08563', 0]$/;"	v
+s:fixme	colors/handmade-hero.vim	/^let s:fixme = ["#DD0000", 0]$/;"	v
+s:function	colors/handmade-hero.vim	/^let s:function = ["#AC6B51", 0]$/;"	v
+s:highlight	colors/handmade-hero.vim	/^let s:highlight = ["#703419", 0]$/;"	v
+s:important	colors/handmade-hero.vim	/^let s:important = ["#aab830", 0]$/;"	v
+s:keyword	colors/handmade-hero.vim	/^let s:keyword = ["#CD950C", 0]$/;"	v
+s:margin	colors/handmade-hero.vim	/^let s:margin = ["#262626", 0]$/;"	v
+s:margin_active	colors/handmade-hero.vim	/^let s:margin_active = ["#404040", 0]$/;"	v
+s:margin_hover	colors/handmade-hero.vim	/^let s:margin_hover = ["#333333", 0]$/;"	v
+s:mark	colors/handmade-hero.vim	/^let s:mark = ["#808080", 0]$/;"	v
+s:none	colors/handmade-hero.vim	/^let s:none = ['NONE', 'NONE']$/;"	v
+s:note	colors/handmade-hero.vim	/^let s:note = ["#6B8E23", 0]$/;"	v
+s:preproc	colors/handmade-hero.vim	/^let s:preproc = ["#DAB98F", 0]$/;"	v
+s:special	colors/handmade-hero.vim	/^let s:special = ["#FF0000", 0]$/;"	v
+s:todo	colors/handmade-hero.vim	/^let s:todo = ["#c73a3a", 0]$/;"	v
+s:underline	colors/handmade-hero.vim	/^let s:underline = 'underline,'$/;"	v
+s:warning	colors/handmade-hero.vim	/^let s:warning = ["#aab830", 0]$/;"	v
+s:xxx	colors/handmade-hero.vim	/^let s:xxx = ["#DDDDDD", 0]$/;"	v
