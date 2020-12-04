@@ -67,6 +67,9 @@ autocmd FileType html setlocal sw=2 ts=2
 autocmd FileType css setlocal sw=2 ts=2
 autocmd FileType Makefile setlocal noet
 
+cnoreabbrev W w
+cnoreabbrev Noh noh
+
 " AsyncRun
 let g:asyncrun_open = 15
 let g:asyncrun_auto = "make"
