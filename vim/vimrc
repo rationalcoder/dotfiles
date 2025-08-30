@@ -19,7 +19,6 @@ set nocp
 
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
 nnoremap <leader>env :vsplit $MYVIMRC<cr>
-nnoremap <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 set ignorecase
 
@@ -52,7 +51,7 @@ if &term =~ "xterm"
     endif
 endif
 
-function MoveCursorToWhereItWas()
+function! MoveCursorToWhereItWas()
     if line("'\"") > 0 && line("'\"") <= line("$")
         exe "normal! g`\""
         exe "normal! zz"
@@ -63,16 +62,57 @@ if has("autocmd")
     au BufReadPost * call MoveCursorToWhereItWas()
 endif
 
+function! GoToMatchingFile()
+    let l:file_name = expand("%:p:r")
+    let l:ext = expand("%:e")
+    if l:ext ==? "cpp" || l:ext ==? "cxx"
+        for l:header_ext in [".h", ".hpp", ".hxx"]
+            let l:matching_file = l:file_name . l:header_ext
+            if filereadable(l:matching_file)
+                echom 'Found file ' . l:matching_file
+                break
+            endif
+        endfor
+    elseif l:ext ==? "h" || l:ext ==? "hpp" || l:ext ==? "hxx"
+        for l:source_ext in [".cpp", ".c"]
+            let l:matching_file = l:file_name . l:source_ext
+            if filereadable(l:matching_file)
+                break
+            endif
+        endfor
+    endif
+
+    if exists("l:matching_file")
+        execute 'e ' . l:matching_file
+    endif
+endfunction
+
+"nnoremap <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+nnoremap <F4> :call GoToMatchingFile()<CR>
+
 autocmd FileType html setlocal sw=2 ts=2
 autocmd FileType css setlocal sw=2 ts=2
 autocmd FileType Makefile setlocal noet
+
+cnoreabbrev W w
+cnoreabbrev Noh noh
 
 " AsyncRun
 let g:asyncrun_open = 15
 let g:asyncrun_auto = "make"
 " F10 to toggle quickfix window
 nnoremap <F10> :call asyncrun#quickfix_toggle(g:asyncrun_open)<cr>
-nnoremap <F5> :w<cr>:AsyncRun! build<cr>
+
+if !exists("g:build_command")
+    if !empty($vimb)
+        let g:build_command = $vimb
+    else
+        let g:build_command = "build"
+    endif
+endif
+execute 'nnoremap <F5> :w<cr>:AsyncRun! ' . g:build_command . '<cr>'
+
+"nnoremap <F5> :w<cr>:AsyncRun! build<cr>
 nnoremap <F7> :w<cr>:cclose<cr>:AsyncStop!<cr>:sleep<cr>:AsyncRun! -slient run<cr>:cclose<cr>
 nnoremap <c-j> :cnext<cr>
 nnoremap <c-k> :cprev<cr>
@@ -95,7 +135,7 @@ let g:errormarker_warninggroup = "non_existent_group"
 "let &errorformat="%f:%l:%c: %t%*[^:]:%m," . &errorformat
 "let &errorformat="%f:%l: %t%*[^:]:%m," . &errorformat
 
-let &errorformat="%f(%l): %t%*[^:]: %m," . &errorformat
+"let &errorformat="%f(%l): %t%*[^:]: %m," . &errorformat
 let errormarker_warningtypes = "wWiI"
 "
 
