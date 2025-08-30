@@ -13,11 +13,14 @@ let g:ctrlp_custom_ignore = {
 call rpcnotify(0, 'Gui', 'WindowMaximized', 1)
 
 " Doesn't do anything in Neovim
-highlight Cursor guifg=blue guibg=black
-highlight iCursor guifg=blue guibg=steelblue
+"highlight Cursor guifg=blue guibg=black
+"highlight iCursor guifg=blue guibg=steelblue
 set guicursor=i-n-v-c:block-Cursor
 set guicursor+=i:ver100-iCursor
 set guicursor+=n-v-c:blinkon0
 set guicursor+=i:blinkwait10
 "
+
+lua require('packages')
+
 
